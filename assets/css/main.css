@@ -1323,4 +1323,16 @@ h3 {
   h3 {
       font-size: 20px;
   }
+  .header .logo h1 {
+      font-size: 25px;
+  }
+  .header {
+      height: 70px;
+  }
+  #main {
+      margin-top: 70px;
+  }
+  .header.sticked {
+      height: 50px;
+  }
 }
