@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
 :root {
   scroll-behavior: smooth;
 }
-
 body {
   color: rgba(var(--color-primary-rgb), 1);
-  font-family: 'Manrope', sans-serif;
-
+  font-family: var(--font-primary);
 }
 
 a {
@@ -21,7 +20,7 @@ a:hover {
 }
 
 .link-hover {
-  color: #18272F;
+	color: #18272F;
   position: relative;
   text-decoration: none;
 }
@@ -58,8 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: var(--font-primary); */
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-primary);
 }
 h2, h3, h1 {
   font-weight: 700;
@@ -547,7 +545,7 @@ h3 {
   left: -10px;
   top: -20px;
   font-weight: 700;
-  color: #f3f6ff;
+  color: rgb(var(--color-theme-rgb), 0.2);
 }
 
 .trending .trending-post li a h3 {
@@ -835,6 +833,7 @@ h3 {
 
 .aside-block .custom-tab-nav .nav-item button {
   color: var(--color-black);
+  font-family: var(--font-secondary);
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 700;
@@ -1298,7 +1297,7 @@ h3 {
 }
 .content-box li::marker {
   color: #6366f16e;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--font-primary);
   font-weight: 800;
   font-size: 22px;
 }
@@ -1328,18 +1327,20 @@ h3 {
       line-height: 1.2em;
   }
   .aside-block .custom-tab-nav .nav-item button {
-      font-size: 10px;
-      margin-right: 12px;
+      margin-right: 9px;
   }
 }
 @media screen and (max-width: 1200px) {
   .section-header h2 {
       font-size: 30px;
   }
+  .post-content {
+      padding-left: 2%;
+      padding-right: 2%;
+  }
 }
 @media screen and (max-width: 768px) {
   .aside-block .custom-tab-nav .nav-item button {
-    font-size: 12px;
     margin-right: 16px;
   }
   .category-row {
