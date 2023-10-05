@@ -1286,7 +1286,37 @@ h3 {
 .category-sec .owl-stage {
   padding-left: 0 !important;
 }
-
+.alert.alert-warning {
+  font-size: 14px;
+  font-weight: 500;
+}
+.content-box {
+  margin-bottom: 40px;
+}
+.content-box li {
+  font-weight: 500;
+}
+.content-box li::marker {
+  color: #6366f16e;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+}
+.list-icon {
+  display: inline-block;
+  transform: rotate(270deg);
+  color: #6366f1;
+  margin-right: 10px;
+}
+.bedge-heading {
+  background: #6366f1;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  position: absolute;
+  top: -15px;
+}
 /* -------------------------------------------------------------- */
 
 @media screen and (max-width: 1440px) {
