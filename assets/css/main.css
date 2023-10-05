@@ -59,6 +59,12 @@ h5,
 h6 {
   font-family: var(--font-primary);
 }
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 32px;
+}
 h2, h3, h1 {
   font-weight: 700;
 }
@@ -84,12 +90,6 @@ section {
 .section-header {
   border-bottom: 2px solid var(--color-black);
 }
-
-.section-header h2 {
-  font-size: 40px;
-  color: var(--color-black);
-}
-
 .section-header p {
   margin-bottom: 0;
 }
@@ -1319,20 +1319,33 @@ h3 {
 /* -------------------------------------------------------------- */
 
 @media screen and (max-width: 1440px) {
-  h5 {
-      font-size: 17px;
+  h1 {
+      font-size: 35px;
+  }
+  h2 {
+     font-size: 28px; 
   }
   h3 {
       font-size: 24px;
       line-height: 1.2em;
+  }
+  h5 {
+      font-size: 17px;
+  }
+  .post-content {
+      padding-left: 6%;
+      padding-right: 6%;
   }
   .aside-block .custom-tab-nav .nav-item button {
       margin-right: 9px;
   }
 }
 @media screen and (max-width: 1200px) {
-  .section-header h2 {
-      font-size: 30px;
+  h1 {
+      font-size: 32px;
+  }
+  h2 {
+      font-size: 26px;
   }
   .post-content {
       padding-left: 2%;
@@ -1340,6 +1353,15 @@ h3 {
   }
 }
 @media screen and (max-width: 768px) {
+  h1 {
+      font-size: 26px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  h3 {
+      font-size: 20px;
+  }
   .aside-block .custom-tab-nav .nav-item button {
     margin-right: 16px;
   }
@@ -1348,12 +1370,6 @@ h3 {
     overflow-x: scroll;
   } 
   .category-item h6 { font-size: 14px;}
-  .section-header h2 {
-      font-size: 25px;
-  }
-  h3 {
-      font-size: 20px;
-  }
   .header .logo h1 {
       font-size: 25px;
   }
