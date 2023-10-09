@@ -23,5 +23,5 @@
 .font-secondary { font-family: var(--font-secondary) !important; }
 
 /* Background Colors */
-.bg-secondary { background-color: var(--color-secondary-light) !important; }
+.bg-secondary { background-color: #cfd8f3 !important; }
 .bg-white { background-color: var(--color-white) !important; }

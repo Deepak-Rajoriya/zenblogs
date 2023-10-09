@@ -470,12 +470,17 @@ h3 {
   font-size: 26px;
   line-height: 1.2em;
 }
+.category-item .W-100 {
+  width: 100%;
+}
 .box-shape {
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
   border: 1px solid #eaeaea;
   padding: 15px 20px;
 }
-
+.box-shape:hover {
+  background: #cfd8f359;
+}
 .post-meta {
   font-size: 11px;
   letter-spacing: 0.07rem;

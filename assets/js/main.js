@@ -26,19 +26,19 @@ jQuery(document).ready(function($){
       stagePadding: 50,
       responsive:{
         0:{
-          items: 2,
-          stagePadding: 30,
+          items: 1,
+          stagePadding: 50,
           // margin: ,
         },
         767:{
-          items: 3,
+          items: 2,
           stagePadding: 30,
         },
         1024:{
-          items: 4,
+          items: 3,
         },
         1440:{
-          items: 6,
+          items: 4,
         }
       }
     });
