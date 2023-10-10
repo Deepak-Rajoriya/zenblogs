@@ -75,9 +75,6 @@ h2, h3, h1 {
 .category-item .bi-chevron-right {
   font-size: 12px;
 }
-#main {
-  margin-top: 90px;
-}
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -158,17 +155,29 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  height: 90px;
-  transition: all 0.5s;
   z-index: 997;
   background: #fff;
 }
-
-.header.sticked {
-  height: 70px;
-  box-shadow: 0 .275rem 1.25rem rgba(11, 15, 25, .05), 0 .25rem .5625rem rgba(11, 15, 25, .03);
+.header-navbar li a {
+  border: 1px solid #e0e0fc;
+  margin-bottom: 5px;
 }
-
+.header-navbar li a:hover {
+  background: #e0e0fc;
+}
+.header.sticked {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 1031;
+  width: 100%;
+  animation: navbar-show .25s ease-in-out;
+  box-shadow: 0 .275rem 1.25rem rgba(11,15,25,.05),0 .25rem .5625rem rgba(11,15,25,.03);
+}
+@keyframes navbar-show {
+  0%   {transform: translateY(-100%);}
+  100%  {transform: translateY(0);}
+}
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
@@ -1377,14 +1386,5 @@ h3 {
   .category-item h6 { font-size: 14px;}
   .header .logo h1 {
       font-size: 25px;
-  }
-  .header {
-      height: 70px;
-  }
-  #main {
-      margin-top: 70px;
-  }
-  .header.sticked {
-      height: 50px;
   }
 }

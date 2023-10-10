@@ -29,19 +29,38 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between py-3">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="m-0">ZenBlog</h1>
       </a>
 
       <div class="position-relative">
-        <a href="#" class="mx-2"><i class="bi bi-list fs-4"></i></a>
+        <button class="btn btn-sm btn-light py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list fs-4"></i>
+        </button>
       </div>
 
     </div>
   </header><!-- End Header -->
+
+  <!-- ======= Header menu ======= -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">ZenBlog</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav header-navbar">
+        <li><a class="nav-link px-3 py-2" href="#">Action</a></li>
+        <li><a class="dropdown-item px-3 py-2" href="#">Another action</a></li>
+        <li><a class="dropdown-item px-3 py-2" href="#">Something else here</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Header menu -->
 
   <main id="main">
 
