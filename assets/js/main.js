@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 jQuery(document).ready(function($){
-  let slider = $('.owl-carousel');
+  let slider = $('.category-slider');
   slider.each(function () {
     $(this).owlCarousel({
       nav: false,
@@ -43,4 +43,13 @@ jQuery(document).ready(function($){
       }
     });
   });
+
+  $('.featured-posts-slider').owlCarousel({
+    items: 1,
+    loop:true,
+    margin:5,
+    nav:true,
+    navText: ['<i class="bi bi-chevron-left"></i>','<i class="bi bi-chevron-right"></i>']
+})
+  
 });
