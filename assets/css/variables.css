@@ -4,24 +4,17 @@
   --font-primary: 'Manrope', sans-serif;
   --font-secondary: 'Inter', sans-serif;
 
-  --color-secondary-rgb: 89, 109, 128;
-  --color-secondary-light: #f3f6ff;
-  --color-secondary-dark-rgb: 64, 79, 92;
+  --color-primary-rgb:0, 97, 242;
 
-  --color-theme-rgb:99, 102, 241;
-
-  --color-black:#000;
   --color-black-rgb:0, 0, 0;
-  --color-white: #fff;
   --color-white-rgb: 255, 255, 255;
 
 }
 
 /* Fonts */
-.font-default { font-family: var(--font-default) !important; }
 .font-primary { font-family: var(--font-primary) !important;}
 .font-secondary { font-family: var(--font-secondary) !important; }
 
 /* Background Colors */
-.bg-secondary { background-color: #cfd8f3 !important; }
+.bg-secondary { background-color: rgb(var(--color-primary-rgb), 0.05) !important; }
 .bg-white { background-color: var(--color-white) !important; }

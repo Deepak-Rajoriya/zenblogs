@@ -10,9 +10,6 @@
         font-size: 24px;
         line-height: 1.2em;
     }
-    h5 {
-        font-size: 17px;
-    }
     .post-content {
         padding-left: 6%;
         padding-right: 6%;
@@ -42,6 +39,9 @@
     }
     h3 {
         font-size: 20px;
+    }
+    h4 {
+        font-size: 18px;
     }
     .aside-block .custom-tab-nav .nav-item button {
       margin-right: 16px;
