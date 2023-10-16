@@ -22,19 +22,37 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between py-3">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="m-0">ZenBlog</h1>
       </a>
 
       <div class="position-relative">
-        <a href="#" class="mx-2"><i class="bi bi-list fs-4"></i></a>
+        <button class="btn btn-sm btn-light py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list fs-4"></i>
+        </button>
       </div>
-
     </div>
   </header><!-- End Header -->
+
+  <!-- ======= Header menu ======= -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">ZenBlog</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav header-navbar">
+        <li><a class="nav-link px-3 py-2" href="#">Action <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2" href="#">Another action <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2" href="#">Something else here <i class="bi bi-arrow-right-short"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Header menu -->
 
   <main id="main">
     <section>
@@ -42,27 +60,49 @@
         <div class="row">
 
           <div class="col-xxl-9 col-lg-8 col-md-7 col-12" data-aos="fade-up">
-            <h3 class="category-title">Category: Business</h3>
+            <h3 class="category-title">Category: Bank</h3>
 
-            <article class="box-shape mb-3">
-              <div class="post-meta mb-2"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <h3><a href="single-post.html" class="link-hover">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente, laudantium dolorum itaque libero eos deleniti?</p>
+            <article class="card box-shape mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/sbi_po.jpg" class="img-fluid rounded h-100" alt="Sbi Po">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="post-meta mb-1"><span class="date">Last date</span> <span class="mx-1">•</span> <span>25/10/2023</span></div>
+                    <h4><a href="single-post.html" class="link-hover fw-bold">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h4>
+                    <p class="card-text m-0">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
             </article>
-            <article class="box-shape mb-3">
-              <div class="post-meta mb-2"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <h3><a href="single-post.html" class="link-hover">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente, laudantium dolorum itaque libero eos deleniti?</p>
+            <article class="card box-shape mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/sbi_po.jpg" class="img-fluid rounded h-100" alt="Sbi Po">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="post-meta mb-1"><span class="date">Last date</span> <span class="mx-1">•</span> <span>25/10/2023</span></div>
+                    <h4><a href="single-post.html" class="link-hover fw-bold">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h4>
+                    <p class="card-text m-0">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
             </article>
-            <article class="box-shape mb-3">
-              <div class="post-meta mb-2"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <h3><a href="single-post.html" class="link-hover">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente, laudantium dolorum itaque libero eos deleniti?</p>
-            </article>
-            <article class="box-shape mb-3">
-              <div class="post-meta mb-2"><span class="date">Culture</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <h3><a href="single-post.html" class="link-hover">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio placeat exercitationem magni voluptates dolore. Tenetur fugiat voluptates quas, nobis error deserunt aliquam temporibus sapiente, laudantium dolorum itaque libero eos deleniti?</p>
+            <article class="card box-shape mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="assets/img/sbi_po.jpg" class="img-fluid rounded h-100" alt="Sbi Po">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <div class="post-meta mb-1"><span class="date">Last date</span> <span class="mx-1">•</span> <span>25/10/2023</span></div>
+                    <h4><a href="single-post.html" class="link-hover fw-bold">What is the son of Football Coach John Gruden, Deuce Gruden doing Now?</a></h4>
+                    <p class="card-text m-0">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                </div>
+              </div>
             </article>
 
             <div class="text-start py-4">
@@ -80,7 +120,7 @@
 
           <div class="col-xxl-3 col-lg-4 col-md-5 col-12">
             <!-- ======= Sidebar ======= -->
-            <div class="aside-block box-shape">
+            <div class="aside-block box-shape px-3 py-2">
 
               <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">

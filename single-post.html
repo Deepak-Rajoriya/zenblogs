@@ -16,25 +16,44 @@
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/responsive.css" rel="stylesheet">
 
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <header id="header" class="header">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between py-3">
 
       <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="m-0">ZenBlog</h1>
       </a>
 
       <div class="position-relative">
-        <a href="#" class="mx-2"><i class="bi bi-list fs-4"></i></a>
+        <button class="btn btn-sm btn-light py-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          <i class="bi bi-list fs-4"></i>
+        </button>
       </div>
-
     </div>
   </header><!-- End Header -->
+
+  <!-- ======= Header menu ======= -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">ZenBlog</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav header-navbar">
+        <li><a class="nav-link px-3 py-2" href="#">Action <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2" href="#">Another action <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2" href="#">Something else here <i class="bi bi-arrow-right-short"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- End Header menu -->
 
   <main id="main">
 
@@ -49,7 +68,7 @@
               <div class="post-meta"><span class="date">Business</span> <span class="mx-1">&bullet;</span> <span>05/10/2023</span></div>
               <h1 class="mb-3">13 Amazing Poems from Shel Silverstein with Valuable Life Lessons</h1>
               <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione officia sed, suscipit distinctio, numquam omnis quo fuga ipsam quis inventore voluptatum recusandae culpa, unde doloribus saepe labore alias voluptate expedita? Dicta delectus beatae explicabo odio voluptatibus quas, saepe qui aperiam autem obcaecati, illo et! Incidunt voluptas culpa neque repellat sint, accusamus beatae, cumque autem tempore quisquam quam eligendi harum debitis.</p>
-              <div class="content-box box-shape pt-4 position-relative">
+              <div class="content-box box-shape pt-4 position-relative p-3">
                 <span class="bedge-heading">Application Fee</span>
                   <ol>
                     <li class="mb-2">For General, EWC, OBC: Rs. 500/-</li>
@@ -59,7 +78,7 @@
                       <span class="fw-bold">Note:</span> Payment Mode (Online): Debit/ Credit Card & Internet Banking
                   </div>
               </div>
-              <div class="content-box box-shape pt-4 position-relative">
+              <div class="content-box box-shape pt-4 position-relative p-3">
                 <span class="bedge-heading">Important Dates</span>
                   <ol>
                     <li class="mb-2">Starting Date for Apply Online including Editing/ Modification of Application by candidates: 07-09-2023</li>
@@ -77,7 +96,7 @@
           </div>
           <div class="col-xxl-3 col-lg-4 col-md-5 col-12">
             <!-- ======= Sidebar ======= -->
-            <div class="aside-block box-shape">
+            <div class="aside-block box-shape px-3 py-2">
 
               <ul class="nav nav-pills custom-tab-nav mb-4" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
