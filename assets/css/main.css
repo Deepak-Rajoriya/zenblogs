@@ -794,3 +794,21 @@ h3 {
   top: 11px;
   color: #fff;
 }
+
+span.dot {
+  width: 6px;
+  height: 6px;
+  background: black;
+  display: inline-block;
+  border-radius: 50px;
+  position: relative;
+  top: -2px;
+  margin-right: 6px;
+}
+.fs-14 { font-size: 14px; line-height: 1.2em; }
+.fs-16 { font-size: 16px; line-height: 1.2em; }
+.apply-now {
+  font-size: 12px;
+  background: #0061f2;
+  color: #fff;
+}
