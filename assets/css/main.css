@@ -805,10 +805,16 @@ span.dot {
   top: -2px;
   margin-right: 6px;
 }
+.fs-12 { font-size: 12px; line-height: 1.2em; }
 .fs-14 { font-size: 14px; line-height: 1.2em; }
 .fs-16 { font-size: 16px; line-height: 1.2em; }
 .apply-now {
-  font-size: 12px;
+  font-size: 10px;
+  background: #0061f2;
+  color: #fff;
+}
+.apply-now:hover {
+  filter: brightness(85%);
   background: #0061f2;
   color: #fff;
 }
