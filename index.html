@@ -54,9 +54,9 @@
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav header-navbar">
-        <li><a class="nav-link px-3 py-2" href="#">Action <i class="bi bi-arrow-right-short"></i></a></li>
-        <li><a class="dropdown-item px-3 py-2" href="#">Another action <i class="bi bi-arrow-right-short"></i></a></li>
-        <li><a class="dropdown-item px-3 py-2" href="#">Something else here <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="nav-link px-3 py-2 rounded" href="#">Latest Notifications <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2 rounded" href="#">Upcomming Notifications <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2 rounded" href="#">Admit Card <i class="bi bi-arrow-right-short"></i></a></li>
       </ul>
     </div>
   </div>
@@ -67,6 +67,12 @@
     <!-- =============== @end Featured posts =================  -->
     <section class="py-4">
       <div class="container">
+        <form class="mb-4" action="">
+          <div class="search-box d-flex align-items-center gap-2">
+            <input class="form-control" type="text" placeholder="Search Job Name" aria-label="Search Job Name">
+            <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
+          </div>
+        </form>
         <div class="featured-posts-slider owl-carousel owl-theme">
           <div class="item bg-secondary px-md-5 py-md-5 px-3 py-4 rounded position-relative">
             <span class="adv-no">
@@ -211,6 +217,29 @@
               <a href="#" class="btn btn-sm apply-now">Apply Now</a>
             </div>
           </article>
+          <article class="notification px-3 py-2 border rounded mb-2 position-relative">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <h6 class="mb-0 department fs-12"><span class="dot"></span> RSPCB</h6>
+                <small class="advt-no">Advt No. 01/2023</small>
+            </div>
+            <h5 class="fs-15 mb-2">Compounder/ Nurse Jr Grade</h5>
+            <div class="d-flex align-items-center justify-content-between">
+              <small class="meta-date">Post Date: 25/10/2023</small>
+              <a href="#" class="btn btn-sm apply-now">Apply Now</a>
+            </div>
+          </article>
+
+          <article class="notification px-3 py-2 border rounded mb-2 position-relative">
+            <div class="d-flex align-items-center justify-content-between mb-2 placeholder-glow">
+              <h6 class="mb-0 department fs-12 placeholder"><span class="dot"></span> RSPCB</h6>
+                <small class="advt-no placeholder">Advt No. 01/2023</small>
+            </div>
+            <h5 class="fs-15 mb-2 placeholder">Compounder/ Nurse Jr Grade</h5>
+            <div class="d-flex align-items-center justify-content-between placeholder-glow">
+              <small class="meta-date placeholder">Post Date: 25/10/2023</small>
+              <a href="#" class="btn btn-sm apply-now placeholder">Apply Now</a>
+            </div>
+          </article>
 
         </div>
 
@@ -220,34 +249,10 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-legal">
-      <div class="container">
-
-        <div class="row justify-content-between">
-          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <div class="copyright">
-              © Copyright <strong><span>ZenBlog</span></strong>. All Rights Reserved
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="social-links text-center text-md-end">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
+  <footer id="footer" class="footer text-center py-md-3 py-2">
+    <div class="container">
+      <small>© Copyright <strong><span>ZenBlog</span></strong>. All Rights Reserved</small>
     </div>
-
   </footer>
 
   <!-- <div class="progress-wrap">
