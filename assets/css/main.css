@@ -842,3 +842,25 @@ span.dot {
 .notification-filter::-webkit-scrollbar {
   display: none;
 }
+
+.fs-12 {
+  font-size: 12px;
+}
+#stateModal h6 {
+  font-size: 18px;
+}
+.state-list li i {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.state-list input[name="state"]:checked ~ i {
+  opacity: 1;
+  visibility: visible;
+}
+.state-list li label {
+  cursor: pointer;
+}
+.state-list li:hover {
+  background-color: #00000017;
+}
