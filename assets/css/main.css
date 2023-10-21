@@ -170,15 +170,13 @@ section {
   background: rgb(var(--color-white-rgb));
 }
 .header-navbar li a {
-  border: 1px solid rgba(var(--color-primary-rgb));
   margin-bottom: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .header-navbar li a:hover {
-  background: rgba(var(--color-primary-rgb));
-  color: rgb(var(--color-white-rgb));
+  background: rgba(var(--color-black-rgb), 0.2);
 }
 .header.sticked {
   position: fixed !important;
@@ -814,7 +812,7 @@ span.dot {
   background: #0061f2;
   color: #fff;
 }
-.apply-now:hover {
+.apply-now:hover, .apply-now:active, .apply-now:focus-visible {
   filter: brightness(85%);
   background: #0061f2;
   color: #fff;
@@ -863,4 +861,8 @@ span.dot {
 }
 .state-list li:hover {
   background-color: #00000017;
+}
+.search-box input {
+  font-size: 12px;
+  height: 37.33px;
 }

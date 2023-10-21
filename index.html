@@ -54,9 +54,9 @@
     </div>
     <div class="offcanvas-body">
       <ul class="navbar-nav header-navbar">
-        <li><a class="nav-link px-3 py-2 rounded" href="#">Latest Notifications <i class="bi bi-arrow-right-short"></i></a></li>
-        <li><a class="dropdown-item px-3 py-2 rounded" href="#">Upcomming Notifications <i class="bi bi-arrow-right-short"></i></a></li>
-        <li><a class="dropdown-item px-3 py-2 rounded" href="#">Admit Card <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="nav-link px-3 py-2 rounded border" href="#">Latest Notifications <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2 rounded border" href="#">Upcomming Notifications <i class="bi bi-arrow-right-short"></i></a></li>
+        <li><a class="dropdown-item px-3 py-2 rounded border" href="#">Admit Card <i class="bi bi-arrow-right-short"></i></a></li>
       </ul>
     </div>
   </div>
@@ -68,8 +68,8 @@
     <section class="py-4">
       <div class="container">
         <form class="mb-4" action="">
-          <div class="search-box d-flex align-items-center gap-2">
-            <input class="form-control" type="text" placeholder="Search Job Name" aria-label="Search Job Name">
+          <div class="search-box d-flex align-items-center gap-1">
+            <input class="form-control" name="search" type="text" placeholder="Search Job Name" aria-label="Search Job Name">
             <button class="btn btn-light" type="submit"><i class="bi bi-search"></i></button>
           </div>
         </form>
@@ -231,12 +231,12 @@
 
           <article class="notification px-3 py-2 border rounded mb-2 position-relative">
             <div class="d-flex align-items-center justify-content-between mb-2 placeholder-glow">
-              <h6 class="mb-0 department fs-12 placeholder"><span class="dot"></span> RSPCB</h6>
+                <span class="placeholder col-3"></span>
                 <small class="advt-no placeholder">Advt No. 01/2023</small>
             </div>
-            <h5 class="fs-15 mb-2 placeholder">Compounder/ Nurse Jr Grade</h5>
+            <span class="placeholder col-8"></span>
             <div class="d-flex align-items-center justify-content-between placeholder-glow">
-              <small class="meta-date placeholder">Post Date: 25/10/2023</small>
+              <span class="placeholder col-6"></span>
               <a href="#" class="btn btn-sm apply-now placeholder">Apply Now</a>
             </div>
           </article>
@@ -249,7 +249,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer text-center py-md-3 py-2">
+  <footer id="footer" class="footer text-center py-3">
     <div class="container">
       <small>© Copyright <strong><span>ZenBlog</span></strong>. All Rights Reserved</small>
     </div>
