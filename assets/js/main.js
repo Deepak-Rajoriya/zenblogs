@@ -141,13 +141,28 @@ jQuery(document).ready(function ($) {
   ];
 
   states.map(function(state){
-    jQuery("#state-list").append(`<li class="rounded mb-1 border">
+    if(state === 'Rajasthan'){
+      jQuery("#state-list").append(`<li class="rounded mb-1 border">
+            <label class="px-3 py-2 d-flex align-items-center justify-content-between">
+                <input type="radio" class="d-none" name="state" value="${state}" checked="checked">
+                ${state}
+                <i class="bi bi-check2-circle"></i>
+            </label>
+        </li>`);
+    }else{
+      jQuery("#state-list").append(`<li class="rounded mb-1 border">
             <label class="px-3 py-2 d-flex align-items-center justify-content-between">
                 <input type="radio" class="d-none" name="state" value="${state}">
                 ${state}
                 <i class="bi bi-check2-circle"></i>
             </label>
         </li>`);
+    }
+  })
+
+  jQuery('input[name="state"]').on('change', function(){
+    let active_state = jQuery('input[name="state"]:checked').val();
+    jQuery('#filter_state').html(active_state+' <i class="bi bi-chevron-down"></i>');
   })
 
 });
